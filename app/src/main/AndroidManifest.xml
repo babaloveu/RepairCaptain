@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.repaircaptain">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name="com.example.lenovo.repaircaptain.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_cr"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.SplashActivity"
+            android:theme="@style/NoActionBarFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       <!--设置-->
+        <activity android:name="com.example.lenovo.repaircaptain.ui.SettingActivity"
+            android:label="@string/text_setting"/>
+
+        <!--创建订单-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.CreateActivity"
+            android:label="@string/text_create"/>
+
+        <!--主页-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!--引导-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.GuideActivity"
+            android:theme="@style/NoActionBarFullScreen"/>
+        <!--搜索-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.SearchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!--登录-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+
+        <!--注册-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.RegisterActivity"
+            android:label="注册"
+            />
+        <!--忘记/重置密码-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.ForgetPassActivity"
+            android:label="忘记/重置密码"
+            />
+
+        <!--查询-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.SelectActivity"
+            android:label="订单查询"
+            />
+
+        <!--订单详情页-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.DetailActivity"
+            android:label="订单详情"
+            />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="PDNLUyGjrQaT5wOBRUBrtWQSZwzBhMck">
+        </meta-data>
+
+        <!--我的位置-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.LocationActivity"
+            android:label="我的位置"
+            />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!--意见反馈-->
+        <activity
+            android:name="com.example.lenovo.repaircaptain.ui.SuggestionActivity"
+            android:label="意见反馈"
+            />
+
+    </application>
+
+</manifest>

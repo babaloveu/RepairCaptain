@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"
+        android:theme="@android:style/Widget.Material.Light"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back" />
+
+            <EditText
+                android:id="@+id/et_search_keywords"
+                android:layout_width="240dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:inputType="text"
+                android:hint="@string/text_search_hint"/>
+            <!--<android.support.v7.widget.SearchView-->
+            <!--android:id="@+id/et_search_keywords"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="text"-->
+            <!--&gt;-->
+
+            <!--</android.support.v7.widget.SearchView>-->
+
+            <Button
+                android:id="@+id/btn_search"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/btn_search"
+                android:textColor="@color/color_white" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/lv_searching_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/base_color">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">repairservice</string>
+    <string name="title1">首页</string>
+    <string name="title2">订单</string>
+    <string name="title3">美女社区</string>
+    <string name="title4">个人中心</string>
+    <string name="text_user_name">用户名</string>
+    <string name="text_age">电话</string>
+    <string name="text_desc">简历</string>
+    <string name="text_boy">男</string>
+    <string name="text_girl_f">女</string>
+    <string name="text_password">密码</string>
+    <string name="text_password_again">再输入一次</string>
+    <string name="text_email">邮箱</string>
+    <string name="text_register_remind">注册成功需要前往邮箱注册验证，否则无法登录</string>
+    <string name="text_editor_password">修改密码</string>
+    <string name="text_now_password">旧密码</string>
+    <string name="text_new_password">新密码</string>
+    <string name="text_forget_password">忘记密码</string>
+    <string name="text_registered">注册</string>
+    <string name="text_now_login">正在登录</string>
+    <string name="text_create">立即报修</string>
+    <string name="text_select">查询订单</string>
+    <string name="text_locate">我的位置</string>
+    <string name="text_sugg">意见反馈</string>
+    <string name="text_contact">联系客服</string>
+    <string name="text_setting">设置</string>
+    <string name="text_edit">修改</string>
+    <string name="text_save">保存</string>
+    <string name="text_createtime">创建时间：</string>
+    <string name="text_order_id">订单编号：</string>
+    <string name="text_order_state">订单状态：</string>
+    <string name="text_name">姓名：</string>
+    <string name="text_phone">联系方式：</string>
+    <string name="text_address">住址：</string>
+    <string name="text_machine">设备名称：</string>
+    <string name="text_description">问题描述：</string>
+    <string name="text_time">期望维修时间：</string>
+    <string name="text_level">紧急程度：</string>
+    <string name="text_more">点击查看更多流程详情</string>
+    <string name="text_search_hint">请输入设备名称</string>
+    <string name="text_submit">提交订单</string>
+    <string name="btn_search">搜索</string>
+
+    <string-array name="spinner_level">
+        <item>一般</item>
+        <item>紧急 </item>
+        <item>特急</item>
+    </string-array>
+    <string-array name="spinner_time2">
+        <item>上午8：00-10：00</item>
+        <item>上午10：00-12：00</item>
+        <item>下午1：00-3：00</item>
+        <item>下午3：00-5：00</item>
+    </string-array>
+    <string-array name="spinner_time1">
+        <item>工作日</item>
+        <item>双休日</item>
+        <item>无限制</item>
+
+    </string-array>
+
+
+</resources>
